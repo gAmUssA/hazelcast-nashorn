@@ -1,0 +1,41 @@
+= Hazelcast Scripting With Nashorn
+Viktor Gamov <viktor@hazelcast.com>, © 2015 Hazelcast, Inc.
+2015-03-27
+:revdate: 2015-03-27 17:41:40 -0600
+:linkattrs:
+:ast: &ast;
+:y: &#10003;
+:n: &#10008;
+:y: icon:check-sign[role="green"]
+:n: icon:check-minus[role="red"]
+:c: icon:file-text-alt[role="blue"]
+:toc: auto
+:toc-placement: auto
+:toc-position: right
+:toc-title: Table of content
+:toclevels: 3
+:idprefix:
+:idseparator: -
+:sectanchors:
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-theme: idea
+:experimental:
+
+Preamble of a document
+
+toc::[]
+
+== Requirements
+
+JDK8 + Nashorn
+
+== Run the example
+
+== Starting Hazelcast Member Node
+
+`src/main/javascript/hazelcastClient.js` or from gradle `./gradlew stopClient`
+
+== Staring Hazelcast Client
+
+`src/main/javascript/hazelcastClient.js` or from gradle `./gradlew startClient`
