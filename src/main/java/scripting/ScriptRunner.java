@@ -4,7 +4,9 @@ import jdk.nashorn.api.scripting.NashornScriptEngine;
 import jdk.nashorn.api.scripting.NashornScriptEngineFactory;
 import jdk.nashorn.api.scripting.URLReader;
 
-import javax.script.*;
+import javax.script.Bindings;
+import javax.script.ScriptContext;
+import javax.script.ScriptException;
 import java.util.function.Consumer;
 
 public class ScriptRunner {
@@ -17,8 +19,6 @@ public class ScriptRunner {
         NashornScriptEngineFactory factory = new NashornScriptEngineFactory();
         NashornScriptEngine nashorn = (NashornScriptEngine) factory.getScriptEngine(options);
 
-        ScriptEngineManager scriptEngineManager = new ScriptEngineManager();
-        ScriptEngine nashorn = scriptEngineManager.getEngineByName("nashorn");
         String scriptName = args[0];
         Bindings bindings = nashorn.createBindings();
         bindings.put("scriptFileName", scriptName);
