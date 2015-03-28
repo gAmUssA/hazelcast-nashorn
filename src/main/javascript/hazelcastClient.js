@@ -36,6 +36,7 @@ var hazelcastClient = HazelcastClient.newHazelcastClient(clientConfig);
 var map = hazelcastClient.getMap("default");
 map.addEntryListener(myEntryListener, true);
 map.put("key1", "blahhh");
-//map.executeOnEntries(myEntryProcessor);
+// http://docs.hazelcast.org/docs/latest/manual/html/entryprocessor.html
+// map.executeOnEntries(myEntryProcessor);
 console.log(map.get("key1"));
 //hazelcastClient.shutdown();

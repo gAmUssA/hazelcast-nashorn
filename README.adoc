@@ -32,6 +32,10 @@ JDK8 + Nashorn
 
 == Run the example
 
+== Before Start
+
+Run `./gradlew collectJars` to put jar inro local directory `build\classapth\libs`
+
 == Starting Hazelcast Member Node
 
 `src/main/javascript/hazelcastClient.js` or from gradle `./gradlew stopClient`
